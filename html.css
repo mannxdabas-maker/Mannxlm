@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  position: relative;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.button-area {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+}
+
+/* FIXED SIZE BUTTONS */
+button {
+  width: 120px;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+#yesBtn {
+  background: #4CAF50;
+  color: white;
+}
+
+#noBtn {
+  background: #f44336;
+  color: white;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  button {
+    width: 100px;
+    height: 45px;
+    font-size: 16px;
+  }
+}
